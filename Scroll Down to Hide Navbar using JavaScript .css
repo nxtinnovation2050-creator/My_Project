@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans|Open+Sans:500,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  scroll-behavior: smooth;
+}
+body::selection{
+  color: white;
+  background: #0089f2;
+}
+body::-webkit-scrollbar{
+  width: 16px;
+}
+body::-webkit-scrollbar-track{
+  background: #e6e6e6;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: linear-gradient(#3498db,#9b59b6);
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#2691d9,#954eb1);
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 1px 15px silver;
+  z-index: 1;
+  transition: top 0.3s;
+}
+label{
+  line-height: 80px;
+  padding: 0 80px;
+  font-size: 40px;
+  color: #0089f2;
+  letter-spacing: -1px;
+  user-select: none;
+}
+nav ul{
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  line-height: 80px;
+  margin-right: 50px;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li.active a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0a87f5,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li:hover a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0a87f5,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li a{
+  color: grey;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans',sans-serif;
+}
+nav ul li a.active2{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0a87f5,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+.content{
+  position: absolute;
+  top: 100px;
+  padding: 0 80px;
+}
+.content h1{
+  font-size: 55px;
+}
+.content p{
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Noto Sans', sans-serif;
+}
+.content h2{
+  font-size: 45px;
+}
+.content ul{
+  padding: 0 0 10px 30px;
+}
+.content ul li{
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+}
+center{
+  color: #0089f2;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
