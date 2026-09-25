@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Neumorphism Pagination | CodingNepal</title>
+    <link rel="stylesheet" href="Neumorphism Pagination Design.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="pagination">
+<li><a href="#">Previous</a></li>
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#">6</a></li>
+<li><a href="#">7</a></li>
+<li><a href="#">8</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+<script>
+      $("li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>
