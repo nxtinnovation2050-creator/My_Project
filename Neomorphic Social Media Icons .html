@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 - Neumorphic Social Icons</title>
+    <link rel="stylesheet" href="Neomorphic Social Media Icons .css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <div class="icons first">
+<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+<li><a href="#"><span class="fab fa-github"></span></a></li>
+</div>
+<div class="icons second">
+<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+<li><a href="#"><span class="fab fa-github"></span></a></li>
+</div>
+</div>
+<script>
+    $('.first li').click(function(){
+      $(this).toggleClass("shadow-1").siblings();
+      $(this).toggleClass("fill-color").siblings();
+    });
+    $('.second li').click(function(){
+      $(this).toggleClass("shadow-2").siblings();
+      $(this).toggleClass("fill-color").siblings();
+    });
+    </script>
+
+  </body>
+</html>
