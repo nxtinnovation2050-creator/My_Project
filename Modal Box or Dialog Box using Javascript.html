@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Custom Modal Box | CodingNepal</title>
+    <link rel="stylesheet" href="Modal Box or Dialog Box using Javascript.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="show-btn">
+      <button>Show Modal</button>
+    </div>
+<div class="modal">
+      <div class="top-content">
+        <div class="left-text">
+Modal Box</div>
+<span class="close-icon"><i class="fas fa-times"></i></span>
+        <div class="fas fa-camera-retro">
+</div>
+</div>
+<div class="bottom-content">
+        <div class="text">
+Custom Modal Box</div>
+<p>
+Create a simple modal box using html and css only.</p>
+<div class="close-btn">
+          <button>Close Modal</button>
+        </div>
+</div>
+</div>
+<script>
+      $('.show-btn').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').addClass("disabled");
+      });
+      $('.close-icon').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').removeClass("disabled");
+      });
+      $('.close-btn').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').removeClass("disabled");
+      });
+    </script>
+  </body>
+</html>
