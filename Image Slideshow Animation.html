@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slideshow Animation | CodingNepal</title>
+    <link rel="stylesheet" href="Image Slideshow Animation.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="images">
+        <img src="coal-harbour-1280x720.png">
+        <img src="0a90196fd80e19d4e4db3a8656770543.jpg">
+        <img src="deron_williams_utah_jazz.jpg">
+        <img src="Cape-Town-640x420.jpg">
+        <img src="body-2-6-1.jpg">
+      </div>
+</div>
+<script>
+      var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 2500);
+        var x;
+        const img = document.querySelectorAll("img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();
+    </script>
+
+  </body>
+</html>
+
