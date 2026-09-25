@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider Toggle Button | CodingNepal</title>
+    <link rel="stylesheet" href="image slide.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="images">
+        <img src="deron_williams_utah_jazz.jpg">
+        <img src="coal-harbour-1280x720.png">
+        <img src="Cape-Town-640x420.jpg">
+        <img src="body-2-6-1.jpg">
+        <img src="0a90196fd80e19d4e4db3a8656770543.jpg">
+      </div>
+<div class="btm-slides">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+        <span onclick="btm_slide(4)"></span>
+        <span onclick="btm_slide(5)"></span>
+      </div>
+<div class="sliders left" onclick="side_slide(-1)">
+        <span class="fas fa-angle-left"></span>
+      </div>
+<div class="sliders right" onclick="side_slide(1)">
+        <span class="fas fa-angle-right"></span>
+      </div>
+</div>
+<script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function btm_slide(e){showImg(indexValue = e);}
+      function side_slide(e){showImg(indexValue += e);}
+      function showImg(e){
+        var i;
+        const img = document.querySelectorAll('img');
+        const slider = document.querySelectorAll('.btm-slides span');
+        if(e > img.length){indexValue = 1}
+        if(e < 1){indexValue = img.length}
+        for(i = 0; i < img.length; i++){
+          img[i].style.display = "none";
+        }
+        for(i = 0; i < slider.length; i++){
+          slider[i].style.background = "rgba(255,255,255,0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        slider[indexValue-1].style.background = "white";
+      }
+    </script>
+
+
+  </body>
+</html>
